@@ -1,0 +1,30 @@
+body {
+ background-color: rgb(237, 211, 180);
+
+ font-family: "Courier New", Courier, monospace;
+}
+
+#hi {
+ width: 100px;
+ position: absolute;
+ top: 50px;
+ right: 50px;
+
+}
+
+#app {
+ position: absolute;
+ top: 35%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.card-header {
+ text-align: center;
+ background-color: rgb(237, 211, 180);
+}
+
+.card-body {
+ text-align: center;
+ background-color: rgb(237, 211, 180);
+}
