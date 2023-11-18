@@ -1,15 +1,19 @@
+//! API Variables
 const apiKey = "53d22112941bff57a52856e745e6f559";
 const apiURL =
   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
+//! HTML Variables
 const search = document.getElementById("search");
 const searchButton = document.getElementById("searchButton");
 const currentLocation = document.getElementById("currentLocation");
 const image = document.getElementById("image");
 const pageError = document.getElementById("error");
 
+//! Setting the error message to be invisible
 pageError.style.display = "none";
 
+//! Function for weather API
 async function checkWeather(city) {
   const response = await fetch(apiURL + city + `&appid=${apiKey}`);
   var data = await response.json();
